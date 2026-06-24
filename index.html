@@ -201,6 +201,57 @@ footer{background:#0F1A0F;color:rgba(255,255,255,0.28);text-align:center;padding
 @keyframes fadeUp{from{opacity:0;transform:translateY(20px);}to{opacity:1;transform:translateY(0);}}
 @keyframes fadeIn{from{opacity:0;}to{opacity:1;}}
 
+
+/* =========================
+   CORE COMPETENCIES
+========================= */
+.competency-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:24px;
+    margin-top:50px;
+}
+.competency-card{
+    background:#fff;
+    border:1px solid #e5e5e5;
+    border-radius:18px;
+    padding:32px 26px;
+    transition:.3s ease;
+    text-align:center;
+}
+.competency-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 20px 45px rgba(0,0,0,.08);
+}
+.competency-icon{
+    font-size:2.3rem;
+    margin-bottom:18px;
+}
+.competency-card h3{
+    margin-bottom:12px;
+    font-family:"Cormorant Garamond",serif;
+    font-size:1.5rem;
+    color:#222;
+}
+.competency-card p{
+    color:#666;
+    font-size:.95rem;
+    line-height:1.7;
+}
+/* Mobile */
+@media(max-width:900px){
+.competency-grid{
+grid-template-columns:repeat(2,1fr);
+}
+}
+@media(max-width:600px){
+.competency-grid{
+grid-template-columns:1fr;
+}
+
+}
+  
+  
 @media(max-width:900px){
   nav{padding:0.9rem 1.2rem;}
   .nav-links{display:none;flex-direction:column;position:absolute;top:100%;left:0;right:0;background:rgba(248,244,239,0.98);padding:1rem 1.5rem;gap:1rem;border-bottom:1px solid var(--light-line);z-index:199;}
@@ -253,7 +304,7 @@ footer{background:#0F1A0F;color:rgba(255,255,255,0.28);text-align:center;padding
   <div class="hero-left">
     <p class="hero-eyebrow">Biomedical Engineer · Research Enthusiast · PhD Applicant</p>
     <h1 class="hero-name">Tamanna <em>E Jannati</em></h1>
-    <p class="hero-tagline">Biomedical Engineering researcher with interests in biomaterials, computational biology, and drug delivery. Experienced in wet laboratory techniques, cell culture, and medical physics training, with publications in Elsevier journals and presentations at IEEE conferences.</p>
+    <p class="hero-tagline">Biomedical Engineering researcher with interests in biomaterials, computational drug discovery. Experienced in wet laboratory techniques, cell culture, and medical physics training, with publications in Elsevier journals and presentations at IEEE conferences.</p>
     <div class="hero-badges">
       <span class="badge accent">Elsevier Co-Author · 2025</span>
       <span class="badge teal">IEEE Presenter · 2025</span>
@@ -274,10 +325,10 @@ footer{background:#0F1A0F;color:rgba(255,255,255,0.28);text-align:center;padding
 
 <section id="highlights">
   <div class="highlights-grid reveal">
-    <div class="hl-card pub"><div class="hl-num">4+</div><div class="hl-label">Publications &amp; Proceedings</div><div class="hl-desc">Elsevier journals + IEEE · 3 more under review</div></div>
+    <div class="hl-card pub"><div class="hl-num">4+</div><div class="hl-label">Publications &amp; Proceedings</div><div class="hl-desc">Elsevier journals · IEEE · 3 more under review</div></div>
     <div class="hl-card research"><div class="hl-num">3</div><div class="hl-label">Research Areas</div><div class="hl-desc">Biomaterials · Drug Delivery · Computational Biology</div></div>
-    <div class="hl-card training"><div class="hl-num">2</div><div class="hl-label">Clinical Trainings</div><div class="hl-desc">HGRTC Internship + INMP Medical Physics Fieldwork</div></div>
-    <div class="hl-card pres"><div class="hl-num">3</div><div class="hl-label">Presentations</div><div class="hl-desc">IEEE Symposium · COMPAS 2025 · Bangladesh Med Physics</div></div>
+    <div class="hl-card training"><div class="hl-num">2</div><div class="hl-label">Professional Trainings</div><div class="hl-desc">HGRTC Internship · INMP Medical Physics Fieldwork</div></div>
+    <div class="hl-card pres"><div class="hl-num">2</div><div class="hl-label">Presentations</div><div class="hl-desc">IEEE Symposium · COMPAS 2025</div></div>
   </div>
 </section>
 
@@ -290,10 +341,10 @@ footer{background:#0F1A0F;color:rgba(255,255,255,0.28);text-align:center;padding
   </div>
   <div class="about-grid reveal">
     <div class="about-text">
-      <p>I am a final-year Biomedical Engineering student at <strong>Islamic University, Kushtia</strong>, with research spanning computational cancer biology and functional biomaterials for wound healing. My work sits at the intersection of molecular simulation, materials fabrication, and clinical application.</p>
+      <p>I am a final-year Biomedical Engineering student at <strong>Islamic University, Kushtia</strong>, with research spanning computational cancer biology and functional biomaterials for wound healing.</p>
       <p>I have co-authored research published in <strong>Computers in Biology and Medicine</strong> and <strong>Computational Biology and Chemistry</strong> (Elsevier), and presented at IEEE CS BDC Summer Symposium 2025 and IEEE COMPAS 2025. Three additional manuscripts are under review.</p>
-      <p>My final-year project develops a <strong>Janus PCL/PCL-Gelatin membrane</strong> functionalized with caffeic acid — designed for pH-responsive colorimetric infection detection and dual antibiofilm-antioxidant activity in diabetic foot ulcer care.</p>
-      <p>Beyond research, I am a trained <strong>Nazrul Geeti singer and classical dancer</strong> with First Class First certificates from Rajshahi Shilpakala Academy, and a former listed artist at Bangladesh Betar. I also teach Bangla language at Tinkers Technologies.</p>
+      <p>My final-year project develops a <strong>Fabrication and characterization of banana pseudostem</strong> microcellulose-reinforced chitosan/gum arabic biocomposite films as active packaging for hilsa (tenualosa ilisha) preservation under refrigerated and ambient conditions</p>
+      <p>Beyond research, I pursue <strong>Nazrul Geeti, classical dance, and aquascaping</strong>. These <strong>creative interests</strong> have strengthened my <strong>patience, observation, and discipline</strong> while balancing intensive academic research.</p>
     </div>
     <div class="about-stats">
       <div class="stat-item"><div class="stat-num">4+</div><div class="stat-label">Publications &amp; Proceedings</div></div>
@@ -305,6 +356,17 @@ footer{background:#0F1A0F;color:rgba(255,255,255,0.28);text-align:center;padding
 </section>
 
 
+  <section id="Core Competencies">
+<i class="fas fa-flask"></i> Experimental Techniques
+<i class="fas fa-dna"></i> Molecular Docking
+<i class="fas fa-microscope"></i> Cell Culture
+<i class="fas fa-laptop-code"></i> Computational Drug Discovery
+<i class="fas fa-band-aid"></i> Biomaterials
+<i class="fas fa-radiation"></i> Medical Physics
+</section>
+
+
+  
 <section id="interests">
   <div class="reveal">
     <p class="section-label" style="color:var(--teal)">Research Interests</p>
